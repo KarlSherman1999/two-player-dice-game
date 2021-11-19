@@ -47,7 +47,7 @@ const player1 =()=> {
         p1Value.innerHTML = p1Score
     }
     else if (p1Score == 1){
-        p1Sum = 0
+        p1Sum = p1Hold
         oneUnlucky.style.display = "inline-block"
         setTimeout(()=>{
             oneUnlucky.style.display = "none"
@@ -97,7 +97,7 @@ const player2 =()=> {
         p2Value.innerHTML = p2Score
     }
     else if (p2Score == 1){
-        p2Sum = 0
+        p2Sum = p2Hold
         twoUnlucky.style.display = "inline-block"
         setTimeout(()=>{
             twoUnlucky.style.display = "none"
@@ -151,11 +151,11 @@ hold.addEventListener("click",()=>{
     if (roller1.style.display == "inline-block"){
         roller1.style.display = "none"
         roller2.style.display = "inline-block"
-        // p1Hold = p1Sum
+        p1Hold = p1Sum
     }
     else if (roller2.style.display == "inline-block"){
         roller2.style.display = "none"
         roller1.style.display = "inline-block"
-        // p2Hold = p2Sum
+        p2Hold = p2Sum
     }
 })
