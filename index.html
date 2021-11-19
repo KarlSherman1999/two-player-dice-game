@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Two Player Dice</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+    <h1 id="header">Press Enter To Begin</h1>
+    <img id="newGame" src="images/dice.png"></img>
+    <h2 id="rules">The first to hit 20 wins, but if you role 1 you lose all your points and player 2 can roll vice versa. You can also hold to bank your score! Have fun :D</h2>
+    <div id="container">
+    <h2 id="text1"></h2>
+    <h2 id="text2"></h2>
+    </div>
+    <img id="sixSide" class="small" src = "images/dice.png">
+    <div id="container">
+        <h3 id="p1Value"></h3>
+        <h3 id="p2Value"></h3>
+    </div>
+    <div id="container">
+        <h3 id="p1Total"></h3>
+        <h3 id="p2Total"></h3>
+    </div>
+    <div>
+        <button id="roller">P1 Roll</button>
+        <button id="roller2"> P2 Roll</button>
+    </div>
+    <br><br>
+    <div>
+        <button id="hold">Hold</button>
+    </div>
+    <br><br>
+    <div>
+        <button id ="reset">Reset</button>
+    </div>
+    <div>
+        <h2 id="oneUnlucky">Unlucky roll, your score has reset. Player two's turn</h2>
+        <h2 id="twoUnlucky">Unlucky roll, your score has reset. Player one's turn</h2>
+        <h2 id="oneWinner">Congratulations, Player one has won!</h2>
+        <h2 id="twoWinner">Congratulations, Player two has won!</h2>
+    </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

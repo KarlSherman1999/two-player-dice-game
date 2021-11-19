@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+/* font-family: 'Merriweather Sans', sans-serif; */
+*{
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+body{
+    background-image: url("images/background.png");
+    background-size: 100%;
+}
+
+#newGame{
+    width: 30%;
+}
+
+#container{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+button{
+    background-color: black;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    display: none;
+}
+
+.small{
+    width: 10%;
+    display: none;
+}
+
+#oneUnlucky{
+    display: none;
+    font-size: 70px;
+}
+#twoUnlucky{
+    display: none;
+    font-size: 70px;
+}
+#oneWinner{
+    display: none;
+    font-size: 70px;
+}
+#twoWinner{
+    display: none;
+    font-size: 70px;
+}
